@@ -1,0 +1,30 @@
+[project]
+name = "healthcare-backend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "uday13-kiran", email = "udaykammari13@gamil.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "bcrypt>=5.0.0",
+    "fastapi>=0.142.1",
+    "httpx>=0.28.1",
+    "jwt>=1.4.0",
+    "psycopg>=3.3.6",
+    "pydantic-settings>=2.15.0",
+    "pydantic[email]>=2.13.5",
+    "pyjwt>=2.15.1",
+    "pymongo>=4.18.2",
+    "pytest>=9.1.1",
+    "sqlalchemy>=2.1.1",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+healthcare-backend = "healthcare_backend:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
